@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4017CA3D1C46093C00429A8B /* MainClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017CA3C1C46093C00429A8B /* MainClock.swift */; };
+		4017CA3F1C46096B00429A8B /* BaseClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017CA3E1C46096B00429A8B /* BaseClock.swift */; };
+		408070931C29FF0E00E76845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408070921C29FF0E00E76845 /* AppDelegate.swift */; };
+		408070981C29FF0E00E76845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408070961C29FF0E00E76845 /* Main.storyboard */; };
+		4080709A1C29FF0E00E76845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408070991C29FF0E00E76845 /* Assets.xcassets */; };
+		4080709D1C29FF0E00E76845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4080709B1C29FF0E00E76845 /* LaunchScreen.storyboard */; };
+		408070A81C29FF0E00E76845 /* ScoreboardAndRidingTimeClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408070A71C29FF0E00E76845 /* ScoreboardAndRidingTimeClockTests.swift */; };
+		408070B31C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408070B21C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests.swift */; };
+		408070C11C34CA8200E76845 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408070C01C34CA8200E76845 /* MainViewController.swift */; };
+		408070C31C35D31E00E76845 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408070C21C35D31E00E76845 /* Clock.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		408070A41C29FF0E00E76845 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 408070871C29FF0E00E76845 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4080708E1C29FF0E00E76845;
+			remoteInfo = ScoreboardAndRidingTimeClock;
+		};
+		408070AF1C29FF0E00E76845 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 408070871C29FF0E00E76845 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4080708E1C29FF0E00E76845;
+			remoteInfo = ScoreboardAndRidingTimeClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4017CA3C1C46093C00429A8B /* MainClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainClock.swift; sourceTree = "<group>"; };
+		4017CA3E1C46096B00429A8B /* BaseClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClock.swift; sourceTree = "<group>"; };
+		4080708F1C29FF0E00E76845 /* ScoreboardAndRidingTimeClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreboardAndRidingTimeClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		408070921C29FF0E00E76845 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		408070971C29FF0E00E76845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		408070991C29FF0E00E76845 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4080709C1C29FF0E00E76845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4080709E1C29FF0E00E76845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		408070A31C29FF0E00E76845 /* ScoreboardAndRidingTimeClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreboardAndRidingTimeClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		408070A71C29FF0E00E76845 /* ScoreboardAndRidingTimeClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardAndRidingTimeClockTests.swift; sourceTree = "<group>"; };
+		408070A91C29FF0E00E76845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		408070AE1C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreboardAndRidingTimeClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		408070B21C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardAndRidingTimeClockUITests.swift; sourceTree = "<group>"; };
+		408070B41C29FF0E00E76845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		408070C01C34CA8200E76845 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		408070C21C35D31E00E76845 /* Clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4080708C1C29FF0E00E76845 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		408070A01C29FF0E00E76845 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		408070AB1C29FF0E00E76845 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		408070861C29FF0E00E76845 = {
+			isa = PBXGroup;
+			children = (
+				408070911C29FF0E00E76845 /* ScoreboardAndRidingTimeClock */,
+				408070A61C29FF0E00E76845 /* ScoreboardAndRidingTimeClockTests */,
+				408070B11C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests */,
+				408070901C29FF0E00E76845 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		408070901C29FF0E00E76845 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4080708F1C29FF0E00E76845 /* ScoreboardAndRidingTimeClock.app */,
+				408070A31C29FF0E00E76845 /* ScoreboardAndRidingTimeClockTests.xctest */,
+				408070AE1C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		408070911C29FF0E00E76845 /* ScoreboardAndRidingTimeClock */ = {
+			isa = PBXGroup;
+			children = (
+				408070921C29FF0E00E76845 /* AppDelegate.swift */,
+				408070C01C34CA8200E76845 /* MainViewController.swift */,
+				408070C21C35D31E00E76845 /* Clock.swift */,
+				4017CA3E1C46096B00429A8B /* BaseClock.swift */,
+				4017CA3C1C46093C00429A8B /* MainClock.swift */,
+				408070961C29FF0E00E76845 /* Main.storyboard */,
+				408070991C29FF0E00E76845 /* Assets.xcassets */,
+				4080709B1C29FF0E00E76845 /* LaunchScreen.storyboard */,
+				4080709E1C29FF0E00E76845 /* Info.plist */,
+			);
+			path = ScoreboardAndRidingTimeClock;
+			sourceTree = "<group>";
+		};
+		408070A61C29FF0E00E76845 /* ScoreboardAndRidingTimeClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				408070A71C29FF0E00E76845 /* ScoreboardAndRidingTimeClockTests.swift */,
+				408070A91C29FF0E00E76845 /* Info.plist */,
+			);
+			path = ScoreboardAndRidingTimeClockTests;
+			sourceTree = "<group>";
+		};
+		408070B11C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				408070B21C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests.swift */,
+				408070B41C29FF0E00E76845 /* Info.plist */,
+			);
+			path = ScoreboardAndRidingTimeClockUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4080708E1C29FF0E00E76845 /* ScoreboardAndRidingTimeClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 408070B71C29FF0E00E76845 /* Build configuration list for PBXNativeTarget "ScoreboardAndRidingTimeClock" */;
+			buildPhases = (
+				4080708B1C29FF0E00E76845 /* Sources */,
+				4080708C1C29FF0E00E76845 /* Frameworks */,
+				4080708D1C29FF0E00E76845 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScoreboardAndRidingTimeClock;
+			productName = ScoreboardAndRidingTimeClock;
+			productReference = 4080708F1C29FF0E00E76845 /* ScoreboardAndRidingTimeClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		408070A21C29FF0E00E76845 /* ScoreboardAndRidingTimeClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 408070BA1C29FF0E00E76845 /* Build configuration list for PBXNativeTarget "ScoreboardAndRidingTimeClockTests" */;
+			buildPhases = (
+				4080709F1C29FF0E00E76845 /* Sources */,
+				408070A01C29FF0E00E76845 /* Frameworks */,
+				408070A11C29FF0E00E76845 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				408070A51C29FF0E00E76845 /* PBXTargetDependency */,
+			);
+			name = ScoreboardAndRidingTimeClockTests;
+			productName = ScoreboardAndRidingTimeClockTests;
+			productReference = 408070A31C29FF0E00E76845 /* ScoreboardAndRidingTimeClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		408070AD1C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 408070BD1C29FF0E00E76845 /* Build configuration list for PBXNativeTarget "ScoreboardAndRidingTimeClockUITests" */;
+			buildPhases = (
+				408070AA1C29FF0E00E76845 /* Sources */,
+				408070AB1C29FF0E00E76845 /* Frameworks */,
+				408070AC1C29FF0E00E76845 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				408070B01C29FF0E00E76845 /* PBXTargetDependency */,
+			);
+			name = ScoreboardAndRidingTimeClockUITests;
+			productName = ScoreboardAndRidingTimeClockUITests;
+			productReference = 408070AE1C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		408070871C29FF0E00E76845 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = DrsCreations;
+				TargetAttributes = {
+					4080708E1C29FF0E00E76845 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					408070A21C29FF0E00E76845 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 4080708E1C29FF0E00E76845;
+					};
+					408070AD1C29FF0E00E76845 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 4080708E1C29FF0E00E76845;
+					};
+				};
+			};
+			buildConfigurationList = 4080708A1C29FF0E00E76845 /* Build configuration list for PBXProject "ScoreboardAndRidingTimeClock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 408070861C29FF0E00E76845;
+			productRefGroup = 408070901C29FF0E00E76845 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4080708E1C29FF0E00E76845 /* ScoreboardAndRidingTimeClock */,
+				408070A21C29FF0E00E76845 /* ScoreboardAndRidingTimeClockTests */,
+				408070AD1C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4080708D1C29FF0E00E76845 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4080709D1C29FF0E00E76845 /* LaunchScreen.storyboard in Resources */,
+				4080709A1C29FF0E00E76845 /* Assets.xcassets in Resources */,
+				408070981C29FF0E00E76845 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		408070A11C29FF0E00E76845 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		408070AC1C29FF0E00E76845 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4080708B1C29FF0E00E76845 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408070C31C35D31E00E76845 /* Clock.swift in Sources */,
+				4017CA3F1C46096B00429A8B /* BaseClock.swift in Sources */,
+				408070931C29FF0E00E76845 /* AppDelegate.swift in Sources */,
+				408070C11C34CA8200E76845 /* MainViewController.swift in Sources */,
+				4017CA3D1C46093C00429A8B /* MainClock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4080709F1C29FF0E00E76845 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408070A81C29FF0E00E76845 /* ScoreboardAndRidingTimeClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		408070AA1C29FF0E00E76845 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408070B31C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		408070A51C29FF0E00E76845 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4080708E1C29FF0E00E76845 /* ScoreboardAndRidingTimeClock */;
+			targetProxy = 408070A41C29FF0E00E76845 /* PBXContainerItemProxy */;
+		};
+		408070B01C29FF0E00E76845 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4080708E1C29FF0E00E76845 /* ScoreboardAndRidingTimeClock */;
+			targetProxy = 408070AF1C29FF0E00E76845 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		408070961C29FF0E00E76845 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				408070971C29FF0E00E76845 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4080709B1C29FF0E00E76845 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4080709C1C29FF0E00E76845 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		408070B51C29FF0E00E76845 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		408070B61C29FF0E00E76845 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		408070B81C29FF0E00E76845 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScoreboardAndRidingTimeClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DrsCreations.ScoreboardAndRidingTimeClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		408070B91C29FF0E00E76845 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScoreboardAndRidingTimeClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DrsCreations.ScoreboardAndRidingTimeClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		408070BB1C29FF0E00E76845 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScoreboardAndRidingTimeClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DrsCreations.ScoreboardAndRidingTimeClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoreboardAndRidingTimeClock.app/ScoreboardAndRidingTimeClock";
+			};
+			name = Debug;
+		};
+		408070BC1C29FF0E00E76845 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScoreboardAndRidingTimeClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DrsCreations.ScoreboardAndRidingTimeClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoreboardAndRidingTimeClock.app/ScoreboardAndRidingTimeClock";
+			};
+			name = Release;
+		};
+		408070BE1C29FF0E00E76845 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ScoreboardAndRidingTimeClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DrsCreations.ScoreboardAndRidingTimeClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ScoreboardAndRidingTimeClock;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		408070BF1C29FF0E00E76845 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ScoreboardAndRidingTimeClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DrsCreations.ScoreboardAndRidingTimeClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ScoreboardAndRidingTimeClock;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4080708A1C29FF0E00E76845 /* Build configuration list for PBXProject "ScoreboardAndRidingTimeClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				408070B51C29FF0E00E76845 /* Debug */,
+				408070B61C29FF0E00E76845 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		408070B71C29FF0E00E76845 /* Build configuration list for PBXNativeTarget "ScoreboardAndRidingTimeClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				408070B81C29FF0E00E76845 /* Debug */,
+				408070B91C29FF0E00E76845 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		408070BA1C29FF0E00E76845 /* Build configuration list for PBXNativeTarget "ScoreboardAndRidingTimeClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				408070BB1C29FF0E00E76845 /* Debug */,
+				408070BC1C29FF0E00E76845 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		408070BD1C29FF0E00E76845 /* Build configuration list for PBXNativeTarget "ScoreboardAndRidingTimeClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				408070BE1C29FF0E00E76845 /* Debug */,
+				408070BF1C29FF0E00E76845 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 408070871C29FF0E00E76845 /* Project object */;
+}
