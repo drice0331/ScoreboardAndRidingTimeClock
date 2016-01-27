@@ -10,7 +10,7 @@ import UIKit
 
 class BaseClock: NSObject {
 
-    static let TimeUpdatedNotification = "timeUpdated"
+    //static let TimeUpdatedNotification = "timeUpdated"
     
     let ClockTimeIncrement = 0.02
     
@@ -70,17 +70,17 @@ class BaseClock: NSObject {
         }
         
         //Get milliseconds string
+        /*
         let milliseconds = abs(Int(((self.elapsedTime % 60) * 100) % 100))
-        //var millisecondsString = "\(milliseconds)" + "0"
         var millisecondsString = "00"
         if(milliseconds < 10) {
             millisecondsString = "0" + "\(milliseconds)"
         } else if(milliseconds >= 10) {
             millisecondsString = "\(milliseconds)"
-        }
+        }*/
         
         //Combine
-        let resultTime = minuteString + ":" + secondString + "." + millisecondsString
+        let resultTime = minuteString + ":" + secondString// + "." + millisecondsString
         
         return  resultTime
     }
@@ -89,8 +89,11 @@ class BaseClock: NSObject {
         return self.elapsedTime
     }
     
+    /**
+    * Essentially an abstract method, used to notifiy viewcontroller with updated time of clock
+    **/
     func timeUpdated() {
-        NSNotificationCenter .defaultCenter().postNotificationName(BaseClock.TimeUpdatedNotification, object: nil)
+        //NSNotificationCenter .defaultCenter().postNotificationName(BaseClock.TimeUpdatedNotification, object: nil)
     }
 
 }
