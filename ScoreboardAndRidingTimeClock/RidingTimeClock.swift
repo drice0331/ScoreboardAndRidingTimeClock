@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Clock: BaseClock {
+class RidingTimeClock: BaseClock {
 
     static let TimeUpdatedNotification = "timeUpdated"
     
@@ -56,10 +56,6 @@ class Clock: BaseClock {
         super.stop()
     }
     
-    override func reset() {
-        super.reset()
-    }
-    
     override func timeString()->NSString {
         var resultTime = (super.timeString() as String)
         
@@ -73,7 +69,7 @@ class Clock: BaseClock {
         }
         
         //Combine
-        resultTime =  resultTime + "." + millisecondsString
+        resultTime = resultTime + "." + millisecondsString
         
         return  resultTime
     }
@@ -92,7 +88,7 @@ class Clock: BaseClock {
     }
     
     override func timeUpdated() {
-        NSNotificationCenter .defaultCenter().postNotificationName(Clock.TimeUpdatedNotification, object: nil)
+        NSNotificationCenter .defaultCenter().postNotificationName(RidingTimeClock.TimeUpdatedNotification, object: nil)
     }
     
 }

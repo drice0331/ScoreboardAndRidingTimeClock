@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
-            timestampString = "475360861.659633"
+            timestampString = "475831562.336324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,27 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
-            timestampString = "475360861.659633"
+            timestampString = "475831562.336324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "redButtonClick(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
-            timestampString = "475360861.659633"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "MainViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -106,22 +90,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoreboardAndRidingTimeClock/Clock.swift"
-            timestampString = "475357581.542918"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "reset()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ScoreboardAndRidingTimeClock/Clock.swift"
             timestampString = "474424188.966517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -138,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
-            timestampString = "475360861.659633"
+            timestampString = "475831562.336324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -170,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
-            timestampString = "475360861.659633"
+            timestampString = "475831562.336324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -250,12 +218,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
-            timestampString = "475365086.739838"
+            timestampString = "475831562.336324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "229"
-            endingLineNumber = "229"
-            landmarkName = "changeMainTimer(_:)"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
+            landmarkName = "changeScore(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -266,13 +234,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
-            timestampString = "475360861.659633"
+            timestampString = "475831562.336324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
-            landmarkName = "mainTimeUpdated(_:)"
-            landmarkType = "5">
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "MainViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -282,11 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
-            timestampString = "475360861.659633"
+            timestampString = "475831562.336324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -330,12 +298,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
-            timestampString = "475360861.659633"
+            timestampString = "475831562.336324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
-            landmarkName = "mainTimeUpdated(_:)"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "MainViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
+            timestampString = "475831562.336324"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "updateMainClockTimeLabel()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -346,28 +330,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
-            timestampString = "475360861.659633"
+            timestampString = "475831562.336324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "timeUpdated(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
-            timestampString = "475365086.739838"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "233"
-            endingLineNumber = "233"
-            landmarkName = "changeMainTimer(_:)"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
+            landmarkName = "changeScore(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -410,12 +378,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
-            timestampString = "475365086.739838"
+            timestampString = "475831562.336324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235"
-            landmarkName = "changeMainTimer(_:)"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
+            landmarkName = "changeScore(_:)"
             landmarkType = "5">
             <Locations>
                <Location
@@ -458,11 +426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
-            timestampString = "475360861.659633"
+            timestampString = "475831562.336324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "startStopMainClock(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -474,13 +442,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
-            timestampString = "475360861.659633"
+            timestampString = "475831562.336324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "stopButtonClick(_:)"
-            landmarkType = "5">
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "MainViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -490,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
-            timestampString = "475365086.739838"
+            timestampString = "475831562.336324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
             landmarkName = "changeScore(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -506,13 +474,106 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScoreboardAndRidingTimeClock/MainViewController.swift"
-            timestampString = "475365086.739838"
+            timestampString = "475831562.336324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "264"
-            endingLineNumber = "264"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
             landmarkName = "changeScore(_:)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScoreboardAndRidingTimeClock/FullScoreboardViewController.swift"
+            timestampString = "476133376.34249"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "FullScoreboardViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ScoreboardAndRidingTimeClock.FullScoreboardViewController.mainTimeLabel.getter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "ScoreboardAndRidingTimeClock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/DrIce/Documents/gitworkspaces-ios/ScoreboardAndRidingTimeClock/ScoreboardAndRidingTimeClock/FullScoreboardViewController.swift"
+                  timestampString = "476133376.37845"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ScoreboardAndRidingTimeClock.FullScoreboardViewController.mainTimeLabel.setter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "ScoreboardAndRidingTimeClock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/DrIce/Documents/gitworkspaces-ios/ScoreboardAndRidingTimeClock/ScoreboardAndRidingTimeClock/FullScoreboardViewController.swift"
+                  timestampString = "476133376.378684"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ScoreboardAndRidingTimeClock.FullScoreboardViewController.mainTimeLabel.materializeForSet : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "ScoreboardAndRidingTimeClock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/DrIce/Documents/gitworkspaces-ios/ScoreboardAndRidingTimeClock/ScoreboardAndRidingTimeClock/FullScoreboardViewController.swift"
+                  timestampString = "476133376.378785"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ScoreboardAndRidingTimeClock.FullScoreboardViewController.init (ScoreboardAndRidingTimeClock.FullScoreboardViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; ScoreboardAndRidingTimeClock.FullScoreboardViewController"
+                  moduleName = "ScoreboardAndRidingTimeClock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/DrIce/Documents/gitworkspaces-ios/ScoreboardAndRidingTimeClock/ScoreboardAndRidingTimeClock/FullScoreboardViewController.swift"
+                  timestampString = "476133376.378875"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ScoreboardAndRidingTimeClock.FullScoreboardViewController.init (ScoreboardAndRidingTimeClock.FullScoreboardViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;ScoreboardAndRidingTimeClock.FullScoreboardViewController&gt;"
+                  moduleName = "ScoreboardAndRidingTimeClock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/DrIce/Documents/gitworkspaces-ios/ScoreboardAndRidingTimeClock/ScoreboardAndRidingTimeClock/FullScoreboardViewController.swift"
+                  timestampString = "476133376.378965"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

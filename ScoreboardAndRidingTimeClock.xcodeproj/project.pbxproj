@@ -9,14 +9,15 @@
 /* Begin PBXBuildFile section */
 		4017CA3D1C46093C00429A8B /* MainClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017CA3C1C46093C00429A8B /* MainClock.swift */; };
 		4017CA3F1C46096B00429A8B /* BaseClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017CA3E1C46096B00429A8B /* BaseClock.swift */; };
+		40209C2B1C5C93AA00C5ED3C /* MainScoreboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40209C2A1C5C93AA00C5ED3C /* MainScoreboardViewController.swift */; };
 		408070931C29FF0E00E76845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408070921C29FF0E00E76845 /* AppDelegate.swift */; };
 		408070981C29FF0E00E76845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408070961C29FF0E00E76845 /* Main.storyboard */; };
 		4080709A1C29FF0E00E76845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408070991C29FF0E00E76845 /* Assets.xcassets */; };
 		4080709D1C29FF0E00E76845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4080709B1C29FF0E00E76845 /* LaunchScreen.storyboard */; };
 		408070A81C29FF0E00E76845 /* ScoreboardAndRidingTimeClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408070A71C29FF0E00E76845 /* ScoreboardAndRidingTimeClockTests.swift */; };
 		408070B31C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408070B21C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests.swift */; };
-		408070C11C34CA8200E76845 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408070C01C34CA8200E76845 /* MainViewController.swift */; };
-		408070C31C35D31E00E76845 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408070C21C35D31E00E76845 /* Clock.swift */; };
+		408070C11C34CA8200E76845 /* FullScoreboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408070C01C34CA8200E76845 /* FullScoreboardViewController.swift */; };
+		408070C31C35D31E00E76845 /* RidingTimeClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408070C21C35D31E00E76845 /* RidingTimeClock.swift */; };
 		4096D04C1C58885600ADB0CF /* RidingTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4096D04B1C58885600ADB0CF /* RidingTimeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		4017CA3C1C46093C00429A8B /* MainClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainClock.swift; sourceTree = "<group>"; };
 		4017CA3E1C46096B00429A8B /* BaseClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClock.swift; sourceTree = "<group>"; };
+		40209C2A1C5C93AA00C5ED3C /* MainScoreboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainScoreboardViewController.swift; path = ../MainScoreboardViewController.swift; sourceTree = "<group>"; };
 		4080708F1C29FF0E00E76845 /* ScoreboardAndRidingTimeClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreboardAndRidingTimeClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408070921C29FF0E00E76845 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		408070971C29FF0E00E76845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,8 +54,8 @@
 		408070AE1C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreboardAndRidingTimeClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		408070B21C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardAndRidingTimeClockUITests.swift; sourceTree = "<group>"; };
 		408070B41C29FF0E00E76845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		408070C01C34CA8200E76845 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		408070C21C35D31E00E76845 /* Clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		408070C01C34CA8200E76845 /* FullScoreboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScoreboardViewController.swift; sourceTree = "<group>"; };
+		408070C21C35D31E00E76845 /* RidingTimeClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RidingTimeClock.swift; sourceTree = "<group>"; };
 		4096D04B1C58885600ADB0CF /* RidingTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RidingTimeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,9 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				408070921C29FF0E00E76845 /* AppDelegate.swift */,
-				408070C01C34CA8200E76845 /* MainViewController.swift */,
+				408070C01C34CA8200E76845 /* FullScoreboardViewController.swift */,
 				4096D04B1C58885600ADB0CF /* RidingTimeViewController.swift */,
-				408070C21C35D31E00E76845 /* Clock.swift */,
+				40209C2A1C5C93AA00C5ED3C /* MainScoreboardViewController.swift */,
+				408070C21C35D31E00E76845 /* RidingTimeClock.swift */,
 				4017CA3E1C46096B00429A8B /* BaseClock.swift */,
 				4017CA3C1C46093C00429A8B /* MainClock.swift */,
 				408070961C29FF0E00E76845 /* Main.storyboard */,
@@ -269,10 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4096D04C1C58885600ADB0CF /* RidingTimeViewController.swift in Sources */,
-				408070C31C35D31E00E76845 /* Clock.swift in Sources */,
+				40209C2B1C5C93AA00C5ED3C /* MainScoreboardViewController.swift in Sources */,
+				408070C31C35D31E00E76845 /* RidingTimeClock.swift in Sources */,
 				4017CA3F1C46096B00429A8B /* BaseClock.swift in Sources */,
 				408070931C29FF0E00E76845 /* AppDelegate.swift in Sources */,
-				408070C11C34CA8200E76845 /* MainViewController.swift in Sources */,
+				408070C11C34CA8200E76845 /* FullScoreboardViewController.swift in Sources */,
 				4017CA3D1C46093C00429A8B /* MainClock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

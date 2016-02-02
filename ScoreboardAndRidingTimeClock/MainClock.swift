@@ -23,7 +23,6 @@ class MainClock: BaseClock {
         
         //If adding seconds
         if((timeString as NSString).substringToIndex(1) == ":") {
-            //let secondVal = (timeString as NSString).substringFromIndex(1)
             
             addedTimeValue = Double((timeString as NSString).substringFromIndex(1))!
         }
@@ -33,10 +32,10 @@ class MainClock: BaseClock {
             addedTimeValue = Double(1 * 60)
         }
         else {
-            //TODO - shouldn't end up here, figure out how to throw exception of some sort
+            //TODO - shouldn't end up here, figure out how to throw exception of some sort in swift
         }
         
-        //check if down or up time button was pressed
+        //check if down or up time button was pressed, based on tag given to button in storyboard editor
         if(!isTimeAdded) {
             addedTimeValue = -addedTimeValue
         }

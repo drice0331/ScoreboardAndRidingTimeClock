@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  FullScoreboardViewController.swift
 //  ScoreboardAndRidingTimeClock
 //
 //  Created by David Rice on 12/30/15.
@@ -8,12 +8,22 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
-    //Views
+class FullScoreboardViewController: UIViewController {
+
+    //Views - 
+    //TODO - manually resize based on screen dimens and device
+    //Time labels
     @IBOutlet var mainTimeLabel: UILabel!
-    @IBOutlet var timeLabel: UILabel!
-    @IBOutlet var mainClockStartStopButton: UIButton!
+    @IBOutlet var ridingTimeLabel: UILabel!
     
+    //Score Labels
+    @IBOutlet var redScoreLabel: UILabel!
+    @IBOutlet var greenScoreLabel: UILabel!
+    
+    //Note - all buttons are only here so they can manually be resized later,
+    //and have no other use as outlets
+
+    //Main time buttons
     @IBOutlet var oneMinUp: UIButton!
     @IBOutlet var oneMinDown: UIButton!
     @IBOutlet var thirtySecUp: UIButton!
@@ -22,93 +32,95 @@ class MainViewController: UIViewController {
     @IBOutlet var tenSecDown: UIButton!
     @IBOutlet var oneSecUp: UIButton!
     @IBOutlet var oneSecDown: UIButton!
-    
+    @IBOutlet var mainClockStartStopButton: UIButton!
+    @IBOutlet var mainTimeResetButton: UIButton!
+
+    //Riding time buttons
     @IBOutlet var redTimeButton: UIButton!
     @IBOutlet var greenTimeButton: UIButton!
+    @IBOutlet var ridingTimeResetButton: UIButton!
+    @IBOutlet var ridingTimeNeutralButton: UIButton!
+
+    //Red score buttons
+    @IBOutlet var decrementRedButton: UIButton!
+    @IBOutlet var incrementRedButton: UIButton!
+    @IBOutlet var takedown2RedButton: UIButton!
+    @IBOutlet var penalty1RedButton: UIButton!
+    @IBOutlet var nearfall2RedButton: UIButton!
+    @IBOutlet var nearfall3RedButton: UIButton!
+    @IBOutlet var nearfall4RedButton: UIButton!
+    @IBOutlet var escape1RedButton: UIButton!
+    @IBOutlet var reversal2RedButton: UIButton!
     
-    @IBOutlet var redScoreLabel: UILabel!
-    @IBOutlet var greenScoreLabel: UILabel!
+    //Green score buttons
+    @IBOutlet var decrementGreenButton: UIButton!
+    @IBOutlet var incrementGreenButton: UIButton!
+    @IBOutlet var takedown2GreenButton: UIButton!
+    @IBOutlet var penalty1GreenButton: UIButton!
+    @IBOutlet var nearfall2GreenButton: UIButton!
+    @IBOutlet var nearfall3GreenButton: UIButton!
+    @IBOutlet var nearfall4GreenButton: UIButton!
+    @IBOutlet var escape1GreenButton: UIButton!
+    @IBOutlet var reversal2GreenButton: UIButton!
     
-    
-    var clock:Clock = Clock()
+    var ridingTimeClock:RidingTimeClock = RidingTimeClock()
     var mainclock:MainClock = MainClock()
-    
-    var clockRunning = Bool()
-    var isRed = Bool()
-    var isGreen = Bool()
-    
-    var startTime = NSTimeInterval()
-    
-    var elapsedTime = NSTimeInterval()
-    var dateFormatter = NSDateFormatter()
-    var timer:NSTimer = NSTimer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        clockRunning = false
-        isGreen = false
-        isRed = false
         
-        dateFormatter.dateFormat = "mm:ss.SS"
-
-        let ridingtimeselector : Selector = "timeUpdated:"
-        let maintimeselector : Selector = "mainTimeUpdated"
+        let timeupdateselector : Selector = "timeUpdated:"
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: ridingtimeselector, name:  Clock.TimeUpdatedNotification, object:nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: timeupdateselector, name:  RidingTimeClock.TimeUpdatedNotification, object:nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: ridingtimeselector, name: MainClock.MainTimeUpdatedNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: timeupdateselector, name: MainClock.MainTimeUpdatedNotification, object: nil)
         
-        self.clock = Clock.init()
-        self.clock.reset()
+        self.ridingTimeClock = RidingTimeClock.init()
+        self.ridingTimeClock.reset()
         
         self.mainclock = MainClock.init()
         self.mainclock.reset()
         
     }
 
-    @IBAction func redButtonClick(sender: AnyObject) {
-        if !self.clock.clockRunning {
-            self.clock.redTime()
-        } else if(self.clock.isGreen) {
-            self.clock.stop()
-            self.clock.redTime()
+    @IBAction func redTimeClick(sender: AnyObject) {
+        if self.mainclock.clockRunning {
+            if !self.ridingTimeClock.clockRunning {
+                self.ridingTimeClock.redTime()
+            } else if(self.ridingTimeClock.isGreen) {
+                self.ridingTimeClock.stop()
+                self.ridingTimeClock.redTime()
+            }
+        } else {
+            self.ridingTimeClock.isGreen = false;
+            self.ridingTimeClock.isRed = true;
+            self.updateRidingTimeButtonColors();
         }
-        /*
-            let redSelector : Selector = "updateTime"
-            timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: redSelector, userInfo: nil, repeats: true)
-            self.clockRunning = true
-            self.isGreen = false
-            self.isRed = true
-        */
     }
-    @IBAction func greenButtonClick(sender: AnyObject) {
-        if !self.clock.clockRunning {
-            self.clock.greenTime()
-        } else if(self.clock.isRed) {
-            self.clock.stop()
-            self.clock.greenTime()
+    @IBAction func greenTimeClick(sender: AnyObject) {
+        if self.mainclock.clockRunning {
+            if !self.ridingTimeClock.clockRunning {
+                self.ridingTimeClock.greenTime()
+            } else if(self.ridingTimeClock.isRed) {
+                self.ridingTimeClock.stop()
+                self.ridingTimeClock.greenTime()
+            }
+        } else {
+            self.ridingTimeClock.isGreen = true;
+            self.ridingTimeClock.isRed = false;
+            self.updateRidingTimeButtonColors();
         }
-        /*
-            let greenSelector : Selector = "updateTime"
-            timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: greenSelector, userInfo: nil, repeats: true)
-            self.clockRunning = true
-            self.isGreen = true
-            self.isRed = false
-        */
     }
     
-    @IBAction func stopButtonClick(sender: AnyObject)
+    @IBAction func ridingTimeNeutralClick(sender: AnyObject)
     {
-        //if self.clock.clockRunning {
-        self.clock.stop()
-        self.updateRedGreenTimeButton()
-        //}
+        self.ridingTimeClock.stop()
+        self.updateRidingTimeButtonColors()
     }
     
-    @IBAction func resetButtonClick(sender: AnyObject) {
+    @IBAction func ridingTimeResetClick(sender: AnyObject) {
         
-        self.clock.reset()
+        self.ridingTimeClock.reset()
     }
     
     func timeUpdated(notification:NSNotification) {
@@ -120,7 +132,7 @@ class MainViewController: UIViewController {
         self.updateRidingTimeLabel()
         
         //Set Red or Green button labels
-        self.updateRedGreenTimeButton()
+        self.updateRidingTimeButtonColors()
         
     }
     
@@ -129,52 +141,66 @@ class MainViewController: UIViewController {
         let mainclocktime : String = self.mainclock.timeString() as String
         if self.mainclock.getElapsedTime() <= 0 {
             self.mainclock.stop()
-            self.clock.stop()
+            self.ridingTimeClock.stop()
         }
         self.mainTimeLabel.text = mainclocktime
     }
     
     func updateRidingTimeLabel() {
         
-        self.timeLabel.text = self.clock.timeString() as String
+        self.ridingTimeLabel.text = self.ridingTimeClock.timeString() as String
         
         //Set RidingTime Label color
-        if self.clock.getElapsedTime() < 0 {
+        if self.ridingTimeClock.getElapsedTime() < 0 {
             
-            self.timeLabel.textColor = UIColor.redColor()
+            self.ridingTimeLabel.textColor = UIColor.redColor()
             
-        } else if self.clock.getElapsedTime() > 0 {
+        } else if self.ridingTimeClock.getElapsedTime() > 0 {
             
-            self.timeLabel.textColor = UIColor.greenColor()
+            self.ridingTimeLabel.textColor = UIColor.greenColor()
             
         } else {
-            self.timeLabel.textColor = UIColor.blackColor()
+            self.ridingTimeLabel.textColor = UIColor.blackColor()
         }
     }
     
-    func updateRedGreenTimeButton() {
+    func updateRidingTimeButtonColors() {
         
         //Set Red or Green button highlighted label
-        if self.clock.isGreen {
+        if self.ridingTimeClock.isGreen {
             self.greenTimeButton.titleLabel?.backgroundColor = UIColor.greenColor()
             self.greenTimeButton.titleLabel?.textColor = UIColor.whiteColor()
             
             self.redTimeButton.titleLabel?.backgroundColor = UIColor.whiteColor()
             self.redTimeButton.titleLabel?.textColor = UIColor.redColor()
-            
-        } else if self.clock.isRed {
+
+            self.ridingTimeNeutralButton.titleLabel?.backgroundColor = UIColor.whiteColor()
+            self.ridingTimeNeutralButton.titleLabel?.textColor = UIColor.blackColor()
+
+        } else if self.ridingTimeClock.isRed {
             self.redTimeButton.titleLabel?.backgroundColor = UIColor.redColor()
             self.redTimeButton.titleLabel?.textColor = UIColor.whiteColor()
             
             self.greenTimeButton.titleLabel?.backgroundColor = UIColor.whiteColor()
             self.greenTimeButton.titleLabel?.textColor = UIColor.greenColor()
             
+            self.ridingTimeNeutralButton.titleLabel?.backgroundColor = UIColor.whiteColor()
+            self.ridingTimeNeutralButton.titleLabel?.textColor = UIColor.blackColor()
         } else {
             self.greenTimeButton.titleLabel?.backgroundColor = UIColor.whiteColor()
             self.greenTimeButton.titleLabel?.textColor = UIColor.greenColor()
             
             self.redTimeButton.titleLabel?.backgroundColor = UIColor.whiteColor()
             self.redTimeButton.titleLabel?.textColor = UIColor.redColor()
+            
+            if(self.ridingTimeClock.clockRunning) {
+                self.ridingTimeNeutralButton.titleLabel?.backgroundColor = UIColor.blackColor()
+                self.ridingTimeNeutralButton.titleLabel?.textColor = UIColor.whiteColor()
+            } else {
+                self.ridingTimeNeutralButton.titleLabel?.backgroundColor = UIColor.whiteColor()
+                self.ridingTimeNeutralButton.titleLabel?.textColor = UIColor.blackColor()
+            }
+            
         }
     }
     
@@ -197,10 +223,10 @@ class MainViewController: UIViewController {
         //if main clock is running, then both that, as well as riding time clock should stop
         if self.mainclock.clockRunning {
             self.mainclock.stop()
-            if self.clock.clockRunning {
+            if self.ridingTimeClock.clockRunning {
                 //Using different stop method for riding time clock if still running, to
                 //preserve riding time state
-                self.clock.mainTimeStop()
+                self.ridingTimeClock.mainTimeStop()
             }
         } else {
             if mainclock.elapsedTime > 0 {
@@ -208,11 +234,11 @@ class MainViewController: UIViewController {
                 
                 //If riding time clock is not running then run
                 //riding time clock if green or red time still on
-                if !self.clock.clockRunning {
-                    if self.clock.isGreen {
-                        self.clock.greenTime()
-                    } else if self.clock.isRed {
-                        self.clock.redTime()
+                if !self.ridingTimeClock.clockRunning {
+                    if self.ridingTimeClock.isGreen {
+                        self.ridingTimeClock.greenTime()
+                    } else if self.ridingTimeClock.isRed {
+                        self.ridingTimeClock.redTime()
                     }
                 }
                 
@@ -283,11 +309,6 @@ class MainViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-  
-    func getTimeString() -> String {
-        let date = NSDate(timeIntervalSince1970: self.elapsedTime)
-        return self.dateFormatter .stringFromDate(date)
     }
 
     /*
