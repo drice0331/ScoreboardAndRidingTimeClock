@@ -9,9 +9,6 @@
 import UIKit
 
 class RidingTimeClock: BaseClock {
-
-    static let TimeUpdatedNotification = "timeUpdated"
-    
     
     var isRed = Bool()
     var isGreen = Bool()

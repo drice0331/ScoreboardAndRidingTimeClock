@@ -9,25 +9,28 @@
 import Foundation
 import UIKit
 
-class RidingTimeViewController: UIViewController {
+class RidingTimeViewController: BaseViewController {
 
+    //Views
+    //TODO - manually resize based on screen dimens
     @IBOutlet var ridingTimeLabel: UILabel!
 
     @IBOutlet var redTimeButton: UIButton!
     @IBOutlet var greenTimeButton: UIButton!
+    
     @IBOutlet var stopButton: UIButton!
     @IBOutlet var resetButton: UIButton!
     
-    var ridingTimeClock:Clock = Clock()
+    var ridingTimeClock:RidingTimeClock = RidingTimeClock()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let ridingtimeselector : Selector = "timeUpdated:"
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: ridingtimeselector, name:  Clock.TimeUpdatedNotification, object:nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: ridingtimeselector, name:  RidingTimeClock.TimeUpdatedNotification, object:nil)
         
-        self.ridingTimeClock = Clock.init()
+        self.ridingTimeClock = RidingTimeClock.init()
         self.ridingTimeClock.reset()
         
     }
@@ -39,13 +42,6 @@ class RidingTimeViewController: UIViewController {
             self.ridingTimeClock.stop()
             self.ridingTimeClock.redTime()
         }
-        /*
-        let redSelector : Selector = "updateTime"
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: redSelector, userInfo: nil, repeats: true)
-        self.clockRunning = true
-        self.isGreen = false
-        self.isRed = true
-        */
     }
     @IBAction func greenButtonClick(sender: AnyObject) {
         if !self.ridingTimeClock.clockRunning {
@@ -54,21 +50,12 @@ class RidingTimeViewController: UIViewController {
             self.ridingTimeClock.stop()
             self.ridingTimeClock.greenTime()
         }
-        /*
-        let greenSelector : Selector = "updateTime"
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: greenSelector, userInfo: nil, repeats: true)
-        self.clockRunning = true
-        self.isGreen = true
-        self.isRed = false
-        */
     }
     
     @IBAction func stopButtonClick(sender: AnyObject)
     {
-        //if self.clock.clockRunning {
         self.ridingTimeClock.stop()
-        //self.updateRedGreenTimeButton()
-        //}
+        self.updateRedGreenTimeButton()
     }
     
     @IBAction func resetButtonClick(sender: AnyObject)

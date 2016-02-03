@@ -160,7 +160,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title=":01"/>
                                 <connections>
-                                    <action selector="changeMainTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R9p-Cn-jZF"/>
+                                    <action selector="changeScore:" destination="igk-qz-zPD" eventType="touchUpInside" id="YpZ-qe-U3T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9N-8V-ORt">
@@ -168,7 +168,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title=":01"/>
                                 <connections>
-                                    <action selector="changeMainTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kFD-vK-oMG"/>
+                                    <action selector="changeScore:" destination="igk-qz-zPD" eventType="touchUpInside" id="ibl-Lr-VEC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edx-DY-ws9">
@@ -342,14 +342,32 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Main Scoreboard" id="iee-mG-Ur3"/>
                     <connections>
+                        <outlet property="decrementGreenButton" destination="6b5-aW-Skk" id="xVw-Vo-EJ4"/>
+                        <outlet property="decrementRedButton" destination="hch-Ys-n14" id="Kqg-N4-nm6"/>
+                        <outlet property="escape1GreenButton" destination="TXe-yw-P8f" id="lYP-EG-9v5"/>
+                        <outlet property="escape1RedButton" destination="MAu-YE-Wrp" id="vEt-1b-FSE"/>
                         <outlet property="greenScoreLabel" destination="5Ya-tx-NqK" id="zt7-V6-Bsi"/>
+                        <outlet property="incrementGreenButton" destination="030-dG-VU0" id="zod-7Z-Fnr"/>
+                        <outlet property="incrementRedButton" destination="9pa-xa-V2v" id="zKw-Pe-ENu"/>
+                        <outlet property="nearfall2GreenButton" destination="mbU-K9-gfa" id="Mp7-zV-rg3"/>
+                        <outlet property="nearfall2RedButton" destination="lvf-9Y-thY" id="DUu-A3-kUH"/>
+                        <outlet property="nearfall3GreenButton" destination="d9U-1R-QjF" id="DAs-Ky-Rza"/>
+                        <outlet property="nearfall3RedButton" destination="9JM-O6-cY5" id="DMx-2b-RFe"/>
+                        <outlet property="nearfall4GreenButton" destination="Yuu-zI-KdZ" id="QyG-MZ-hkf"/>
+                        <outlet property="nearfall4RedButton" destination="RFr-SQ-lK5" id="XZs-AP-cPm"/>
                         <outlet property="oneMinDown" destination="QE9-tO-plY" id="8To-sL-6WN"/>
                         <outlet property="oneMinUp" destination="JAn-lh-obj" id="MHP-sc-gdN"/>
                         <outlet property="oneSecDown" destination="o9N-8V-ORt" id="epW-CF-U3T"/>
                         <outlet property="oneSecUp" destination="4CG-Xe-fGE" id="J0F-nl-BZt"/>
+                        <outlet property="penalty1GreenButton" destination="jm2-eI-Sfe" id="OEb-ex-afO"/>
+                        <outlet property="penalty1RedButton" destination="xGb-gg-0BQ" id="r0g-p6-oFc"/>
                         <outlet property="redScoreLabel" destination="EqS-3A-Yv1" id="V45-bA-9MJ"/>
                         <outlet property="resetButton" destination="rni-MS-LFg" id="mjv-CZ-h8t"/>
+                        <outlet property="reversal2GreenButton" destination="Stb-1I-GEv" id="Ler-tQ-ltK"/>
+                        <outlet property="reversal2RedButton" destination="p3w-Lz-efI" id="xqG-k0-G67"/>
                         <outlet property="startStopButton" destination="edx-DY-ws9" id="lG5-Ys-KiH"/>
+                        <outlet property="takedown2GreenButton" destination="o0Z-nc-f8J" id="AYS-da-hbw"/>
+                        <outlet property="takedown2RedButton" destination="gtB-c3-S7W" id="0A2-JO-hdD"/>
                         <outlet property="tenSecDown" destination="5QQ-Gq-2fj" id="RCW-x8-K4U"/>
                         <outlet property="tenSecUp" destination="hzh-fg-Ttd" id="dcH-er-N1H"/>
                         <outlet property="thirtySecDown" destination="Lx5-iL-UwH" id="P0D-HX-7rp"/>

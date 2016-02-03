@@ -9,10 +9,14 @@
 import Foundation
 import UIKit
 
-class MainScoreboardViewController: UIViewController {
+class MainScoreboardViewController: BaseViewController {
 
+    //Views
+    //TODO - manually resize based on screen dimens
+    
     @IBOutlet var timeLabel: UILabel!
     
+    //timer/clock buttons
     @IBOutlet var oneMinUp: UIButton!
     @IBOutlet var oneMinDown: UIButton!
     @IBOutlet var thirtySecUp: UIButton!
@@ -21,12 +25,34 @@ class MainScoreboardViewController: UIViewController {
     @IBOutlet var tenSecDown: UIButton!
     @IBOutlet var oneSecUp: UIButton!
     @IBOutlet var oneSecDown: UIButton!
-    
     @IBOutlet var startStopButton: UIButton!
     @IBOutlet var resetButton: UIButton!
     
+    //Score labels
     @IBOutlet var redScoreLabel: UILabel!
     @IBOutlet var greenScoreLabel: UILabel!
+    
+    //Red score buttons
+    @IBOutlet var decrementRedButton: UIButton!
+    @IBOutlet var incrementRedButton: UIButton!
+    @IBOutlet var takedown2RedButton: UIButton!
+    @IBOutlet var penalty1RedButton: UIButton!
+    @IBOutlet var nearfall2RedButton: UIButton!
+    @IBOutlet var nearfall3RedButton: UIButton!
+    @IBOutlet var nearfall4RedButton: UIButton!
+    @IBOutlet var escape1RedButton: UIButton!
+    @IBOutlet var reversal2RedButton: UIButton!
+    
+    //Green score buttons
+    @IBOutlet var decrementGreenButton: UIButton!
+    @IBOutlet var incrementGreenButton: UIButton!
+    @IBOutlet var takedown2GreenButton: UIButton!
+    @IBOutlet var penalty1GreenButton: UIButton!
+    @IBOutlet var nearfall2GreenButton: UIButton!
+    @IBOutlet var nearfall3GreenButton: UIButton!
+    @IBOutlet var nearfall4GreenButton: UIButton!
+    @IBOutlet var escape1GreenButton: UIButton!
+    @IBOutlet var reversal2GreenButton: UIButton!
     
     var clock:MainClock = MainClock()
     

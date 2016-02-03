@@ -10,9 +10,6 @@ import UIKit
 
 class MainClock: BaseClock {
 
-    static let MainTimeUpdatedNotification = "mainTimeUpdated"
-    static let TimeUpdatedNotification = "timeUpdated"
-
     override init () {
         super.init()
     }

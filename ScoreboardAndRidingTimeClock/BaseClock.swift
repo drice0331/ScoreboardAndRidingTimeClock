@@ -10,13 +10,11 @@ import UIKit
 
 class BaseClock: NSObject {
 
-    //static let TimeUpdatedNotification = "timeUpdated"
+    static let TimeUpdatedNotification = "timeUpdated"
     
     let ClockTimeIncrement = 0.02
     
     var clockRunning = Bool()
-    //var isRed = Bool()
-    //var isGreen = Bool()
     
     var elapsedTime = NSTimeInterval()
     var dateFormatter = NSDateFormatter()
@@ -26,8 +24,6 @@ class BaseClock: NSObject {
         super.init()
         
         self.clockRunning = false
-        //self.isGreen = false
-        //self.isRed = false
         
         self.dateFormatter = NSDateFormatter.init()
         self.dateFormatter.dateFormat = "mm:ss.SS"
@@ -36,8 +32,6 @@ class BaseClock: NSObject {
     func stop() {
         self.timer .invalidate()
         self.clockRunning = false
-        //self.isGreen = false
-        //self.isRed = false
     }
     
     func reset() {
@@ -47,9 +41,6 @@ class BaseClock: NSObject {
     }
     
     func timeString()->NSString {
-        //let date = NSDate(timeIntervalSince1970: abs(self.elapsedTime))
-        //let timeResultString = self.dateFormatter.stringFromDate(date)
-        
         
         //Get minute string
         var minuteString = "00"
@@ -90,7 +81,8 @@ class BaseClock: NSObject {
     }
     
     /**
-    * Essentially an abstract method, used to notifiy viewcontroller with updated time of clock
+    * Essentially an abstract method, used to notifiy viewcontroller with updated time of clock 
+    * (specifically a subclass of baseclock). Should do nothing in baseClock
     **/
     func timeUpdated() {
         //NSNotificationCenter .defaultCenter().postNotificationName(BaseClock.TimeUpdatedNotification, object: nil)

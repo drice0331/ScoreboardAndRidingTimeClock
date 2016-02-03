@@ -10,6 +10,7 @@
 		4017CA3D1C46093C00429A8B /* MainClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017CA3C1C46093C00429A8B /* MainClock.swift */; };
 		4017CA3F1C46096B00429A8B /* BaseClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017CA3E1C46096B00429A8B /* BaseClock.swift */; };
 		40209C2B1C5C93AA00C5ED3C /* MainScoreboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40209C2A1C5C93AA00C5ED3C /* MainScoreboardViewController.swift */; };
+		40209C311C61977E00C5ED3C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40209C301C61977E00C5ED3C /* BaseViewController.swift */; };
 		408070931C29FF0E00E76845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408070921C29FF0E00E76845 /* AppDelegate.swift */; };
 		408070981C29FF0E00E76845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408070961C29FF0E00E76845 /* Main.storyboard */; };
 		4080709A1C29FF0E00E76845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408070991C29FF0E00E76845 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		4017CA3C1C46093C00429A8B /* MainClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainClock.swift; sourceTree = "<group>"; };
 		4017CA3E1C46096B00429A8B /* BaseClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClock.swift; sourceTree = "<group>"; };
 		40209C2A1C5C93AA00C5ED3C /* MainScoreboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainScoreboardViewController.swift; path = ../MainScoreboardViewController.swift; sourceTree = "<group>"; };
+		40209C301C61977E00C5ED3C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4080708F1C29FF0E00E76845 /* ScoreboardAndRidingTimeClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreboardAndRidingTimeClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408070921C29FF0E00E76845 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		408070971C29FF0E00E76845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				408070C01C34CA8200E76845 /* FullScoreboardViewController.swift */,
 				4096D04B1C58885600ADB0CF /* RidingTimeViewController.swift */,
 				40209C2A1C5C93AA00C5ED3C /* MainScoreboardViewController.swift */,
+				40209C301C61977E00C5ED3C /* BaseViewController.swift */,
 				408070C21C35D31E00E76845 /* RidingTimeClock.swift */,
 				4017CA3E1C46096B00429A8B /* BaseClock.swift */,
 				4017CA3C1C46093C00429A8B /* MainClock.swift */,
@@ -276,6 +279,7 @@
 				408070C31C35D31E00E76845 /* RidingTimeClock.swift in Sources */,
 				4017CA3F1C46096B00429A8B /* BaseClock.swift in Sources */,
 				408070931C29FF0E00E76845 /* AppDelegate.swift in Sources */,
+				40209C311C61977E00C5ED3C /* BaseViewController.swift in Sources */,
 				408070C11C34CA8200E76845 /* FullScoreboardViewController.swift in Sources */,
 				4017CA3D1C46093C00429A8B /* MainClock.swift in Sources */,
 			);

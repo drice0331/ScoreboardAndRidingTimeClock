@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FullScoreboardViewController: UIViewController {
+class FullScoreboardViewController: BaseViewController {
 
     //Views - 
     //TODO - manually resize based on screen dimens and device
@@ -69,11 +69,12 @@ class FullScoreboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let timeupdateselector : Selector = "timeUpdated:"
+        let ridingtimeupdateselector : Selector = "ridingTimeUpdated:"
+        let maintimeupdateselector : Selector = "mainTimeUpdated:"
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: timeupdateselector, name:  RidingTimeClock.TimeUpdatedNotification, object:nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: ridingtimeupdateselector, name:  RidingTimeClock.TimeUpdatedNotification, object:nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: timeupdateselector, name: MainClock.MainTimeUpdatedNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: maintimeupdateselector, name: MainClock.TimeUpdatedNotification, object: nil)
         
         self.ridingTimeClock = RidingTimeClock.init()
         self.ridingTimeClock.reset()
@@ -97,6 +98,7 @@ class FullScoreboardViewController: UIViewController {
             self.updateRidingTimeButtonColors();
         }
     }
+    
     @IBAction func greenTimeClick(sender: AnyObject) {
         if self.mainclock.clockRunning {
             if !self.ridingTimeClock.clockRunning {
@@ -123,10 +125,23 @@ class FullScoreboardViewController: UIViewController {
         self.ridingTimeClock.reset()
     }
     
-    func timeUpdated(notification:NSNotification) {
+    /**
+    * Main clock update notification method
+    **/
+    func mainTimeUpdated(notification:NSNotification) {
 
         //Set Main Time Label
         self.updateMainClockTimeLabel()
+        
+        //Set Red or Green button labels
+        self.updateRidingTimeButtonColors()
+        
+    }
+
+    /**
+     * Riding time clock update notification method
+     **/
+    func ridingTimeUpdated(notification:NSNotification) {
         
         //Set RidingTime Label
         self.updateRidingTimeLabel()
@@ -164,12 +179,16 @@ class FullScoreboardViewController: UIViewController {
         }
     }
     
+    /**
+    * Set Red, Green, and Neutral button to correct label colors
+    **/
     func updateRidingTimeButtonColors() {
         
         //Set Red or Green button highlighted label
+        
         if self.ridingTimeClock.isGreen {
-            self.greenTimeButton.titleLabel?.backgroundColor = UIColor.greenColor()
-            self.greenTimeButton.titleLabel?.textColor = UIColor.whiteColor()
+            self.greenTimeButton.titleLabel!.backgroundColor = UIColor.greenColor()
+            self.greenTimeButton.titleLabel!.textColor = UIColor.whiteColor()
             
             self.redTimeButton.titleLabel?.backgroundColor = UIColor.whiteColor()
             self.redTimeButton.titleLabel?.textColor = UIColor.redColor()
@@ -178,42 +197,30 @@ class FullScoreboardViewController: UIViewController {
             self.ridingTimeNeutralButton.titleLabel?.textColor = UIColor.blackColor()
 
         } else if self.ridingTimeClock.isRed {
-            self.redTimeButton.titleLabel?.backgroundColor = UIColor.redColor()
-            self.redTimeButton.titleLabel?.textColor = UIColor.whiteColor()
-            
+            self.redTimeButton.titleLabel!.backgroundColor = UIColor.redColor()
+            self.redTimeButton.titleLabel!.textColor = UIColor.whiteColor()
+
             self.greenTimeButton.titleLabel?.backgroundColor = UIColor.whiteColor()
             self.greenTimeButton.titleLabel?.textColor = UIColor.greenColor()
             
             self.ridingTimeNeutralButton.titleLabel?.backgroundColor = UIColor.whiteColor()
             self.ridingTimeNeutralButton.titleLabel?.textColor = UIColor.blackColor()
-        } else {
+        } else {//we're in neutral
             self.greenTimeButton.titleLabel?.backgroundColor = UIColor.whiteColor()
             self.greenTimeButton.titleLabel?.textColor = UIColor.greenColor()
             
             self.redTimeButton.titleLabel?.backgroundColor = UIColor.whiteColor()
             self.redTimeButton.titleLabel?.textColor = UIColor.redColor()
             
-            if(self.ridingTimeClock.clockRunning) {
-                self.ridingTimeNeutralButton.titleLabel?.backgroundColor = UIColor.blackColor()
-                self.ridingTimeNeutralButton.titleLabel?.textColor = UIColor.whiteColor()
+            if(self.mainclock.getElapsedTime() > 0) {
+                self.ridingTimeNeutralButton.titleLabel!.backgroundColor = UIColor.blackColor()
+                self.ridingTimeNeutralButton.titleLabel!.textColor = UIColor.whiteColor()
             } else {
                 self.ridingTimeNeutralButton.titleLabel?.backgroundColor = UIColor.whiteColor()
                 self.ridingTimeNeutralButton.titleLabel?.textColor = UIColor.blackColor()
             }
             
         }
-    }
-    
-    func mainTimeUpdated(notification:NSNotification) {
-        let mainclocktime : String = self.mainclock.timeString() as String
-        
-        if self.mainclock.getElapsedTime() <= 0 {
-            self.mainclock.stop()
-        } else {
-            self.mainTimeLabel.text = mainclocktime
-        }
-        
-        
     }
     
     //
