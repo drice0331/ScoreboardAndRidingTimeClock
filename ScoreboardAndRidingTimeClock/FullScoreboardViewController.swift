@@ -155,6 +155,9 @@ class FullScoreboardViewController: BaseViewController {
 
         let mainclocktime : String = self.mainclock.timeString() as String
         if self.mainclock.getElapsedTime() <= 0 {
+            if mainclock.clockRunning {
+                self.playBuzzer("")
+            }
             self.mainclock.stop()
             self.ridingTimeClock.stop()
         }

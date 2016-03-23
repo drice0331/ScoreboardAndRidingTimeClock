@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="ScoreboardAndRidingTimeClock/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.2" build-num="7C68"/>
+    </header>
+    <body/>
+  </file>
+  <file original="ScoreboardAndRidingTimeClock/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.2" build-num="7C68"/>
+    </header>
+    <body>
+      <trans-unit id="0lC-6d-yp8.text">
+        <source>0:00</source>
+        <note>Class = "UILabel"; text = "0:00"; ObjectID = "0lC-6d-yp8";</note>
+      </trans-unit>
+      <trans-unit id="1JS-6Y-5C6.text">
+        <source>0</source>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "1JS-6Y-5C6";</note>
+      </trans-unit>
+      <trans-unit id="4CG-Xe-fGE.normalTitle">
+        <source>:01</source>
+        <note>Class = "UIButton"; normalTitle = ":01"; ObjectID = "4CG-Xe-fGE";</note>
+      </trans-unit>
+      <trans-unit id="5QQ-Gq-2fj.normalTitle">
+        <source>:10</source>
+        <note>Class = "UIButton"; normalTitle = ":10"; ObjectID = "5QQ-Gq-2fj";</note>
+      </trans-unit>
+      <trans-unit id="5Ya-tx-NqK.text">
+        <source>0</source>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "5Ya-tx-NqK";</note>
+      </trans-unit>
+      <trans-unit id="6b5-aW-Skk.normalTitle">
+        <source>-</source>
+        <note>Class = "UIButton"; normalTitle = "-"; ObjectID = "6b5-aW-Skk";</note>
+      </trans-unit>
+      <trans-unit id="6eY-0o-Hr1.normalTitle">
+        <source>E1</source>
+        <note>Class = "UIButton"; normalTitle = "E1"; ObjectID = "6eY-0o-Hr1";</note>
+      </trans-unit>
+      <trans-unit id="6ua-DE-TH8.normalTitle">
+        <source>NF2</source>
+        <note>Class = "UIButton"; normalTitle = "NF2"; ObjectID = "6ua-DE-TH8";</note>
+      </trans-unit>
+      <trans-unit id="8Tx-rI-hgV.normalTitle">
+        <source>:10</source>
+        <note>Class = "UIButton"; normalTitle = ":10"; ObjectID = "8Tx-rI-hgV";</note>
+      </trans-unit>
+      <trans-unit id="9JM-O6-cY5.normalTitle">
+        <source>NF3</source>
+        <note>Class = "UIButton"; normalTitle = "NF3"; ObjectID = "9JM-O6-cY5";</note>
+      </trans-unit>
+      <trans-unit id="9pa-xa-V2v.normalTitle">
+        <source>+</source>
+        <note>Class = "UIButton"; normalTitle = "+"; ObjectID = "9pa-xa-V2v";</note>
+      </trans-unit>
+      <trans-unit id="18x-32-j3Q.text">
+        <source>0:00</source>
+        <note>Class = "UILabel"; text = "0:00"; ObjectID = "18x-32-j3Q";</note>
+      </trans-unit>
+      <trans-unit id="030-dG-VU0.normalTitle">
+        <source>+</source>
+        <note>Class = "UIButton"; normalTitle = "+"; ObjectID = "030-dG-VU0";</note>
+      </trans-unit>
+      <trans-unit id="66x-bW-Zh7.normalTitle">
+        <source>+</source>
+        <note>Class = "UIButton"; normalTitle = "+"; ObjectID = "66x-bW-Zh7";</note>
+      </trans-unit>
+      <trans-unit id="AZQ-bw-bpg.normalTitle">
+        <source>Reset</source>
+        <note>Class = "UIButton"; normalTitle = "Reset"; ObjectID = "AZQ-bw-bpg";</note>
+      </trans-unit>
+      <trans-unit id="Bh5-4b-saP.normalTitle">
+        <source>E1</source>
+        <note>Class = "UIButton"; normalTitle = "E1"; ObjectID = "Bh5-4b-saP";</note>
+      </trans-unit>
+      <trans-unit id="EE2-k4-DLI.title">
+        <source>Riding Time Clock</source>
+        <note>Class = "UITabBarItem"; title = "Riding Time Clock"; ObjectID = "EE2-k4-DLI";</note>
+      </trans-unit>
+      <trans-unit id="EqS-3A-Yv1.text">
+        <source>0</source>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "EqS-3A-Yv1";</note>
+      </trans-unit>
+      <trans-unit id="FRf-8B-qhX.normalTitle">
+        <source>NF3</source>
+        <note>Class = "UIButton"; normalTitle = "NF3"; ObjectID = "FRf-8B-qhX";</note>
+      </trans-unit>
+      <trans-unit id="GrP-Fm-hCk.normalTitle">
+        <source>Red</source>
+        <note>Class = "UIButton"; normalTitle = "Red"; ObjectID = "GrP-Fm-hCk";</note>
+      </trans-unit>
+      <trans-unit id="IKG-kV-gUu.normalTitle">
+        <source>Green</source>
+        <note>Class = "UIButton"; normalTitle = "Green"; ObjectID = "IKG-kV-gUu";</note>
+      </trans-unit>
+      <trans-unit id="Ibe-dC-GWz.normalTitle">
+        <source>Reset</source>
+        <note>Class = "UIButton"; normalTitle = "Reset"; ObjectID = "Ibe-dC-GWz";</note>
+      </trans-unit>
+      <trans-unit id="JAn-lh-obj.normalTitle">
+        <source>1:00</source>
+        <note>Class = "UIButton"; normalTitle = "1:00"; ObjectID = "JAn-lh-obj";</note>
+      </trans-unit>
+      <trans-unit id="K9o-hq-Qp4.normalTitle">
+        <source>+</source>
+        <note>Class = "UIButton"; normalTitle = "+"; ObjectID = "K9o-hq-Qp4";</note>
+      </trans-unit>
+      <trans-unit id="KNI-3p-4Jf.normalTitle">
+        <source>-</source>
+        <note>Class = "UIButton"; normalTitle = "-"; ObjectID = "KNI-3p-4Jf";</note>
+      </trans-unit>
+      <trans-unit id="Kx2-IV-fYN.text">
+        <source>0</source>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "Kx2-IV-fYN";</note>
+      </trans-unit>
+      <trans-unit id="Lim-h7-Y1p.normalTitle">
+        <source>Start Stop</source>
+        <note>Class = "UIButton"; normalTitle = "Start Stop"; ObjectID = "Lim-h7-Y1p";</note>
+      </trans-unit>
+      <trans-unit id="Lx5-iL-UwH.normalTitle">
+        <source>:30</source>
+        <note>Class = "UIButton"; normalTitle = ":30"; ObjectID = "Lx5-iL-UwH";</note>
+      </trans-unit>
+      <trans-unit id="MAu-YE-Wrp.normalTitle">
+        <source>E1</source>
+        <note>Class = "UIButton"; normalTitle = "E1"; ObjectID = "MAu-YE-Wrp";</note>
+      </trans-unit>
+      <trans-unit id="QE9-tO-plY.normalTitle">
+        <source>1:00</source>
+        <note>Class = "UIButton"; normalTitle = "1:00"; ObjectID = "QE9-tO-plY";</note>
+      </trans-unit>
+      <trans-unit id="RFr-SQ-lK5.normalTitle">
+        <source>NF4</source>
+        <note>Class = "UIButton"; normalTitle = "NF4"; ObjectID = "RFr-SQ-lK5";</note>
+      </trans-unit>
+      <trans-unit id="SGF-0k-h4a.normalTitle">
+        <source>NF2</source>
+        <note>Class = "UIButton"; normalTitle = "NF2"; ObjectID = "SGF-0k-h4a";</note>
+      </trans-unit>
+      <trans-unit id="Sbv-j0-by7.normalTitle">
+        <source>TD2</source>
+        <note>Class = "UIButton"; normalTitle = "TD2"; ObjectID = "Sbv-j0-by7";</note>
+      </trans-unit>
+      <trans-unit id="Sfx-mt-tKA.normalTitle">
+        <source>Reset</source>
+        <note>Class = "UIButton"; normalTitle = "Reset"; ObjectID = "Sfx-mt-tKA";</note>
+      </trans-unit>
+      <trans-unit id="Stb-1I-GEv.normalTitle">
+        <source>R2</source>
+        <note>Class = "UIButton"; normalTitle = "R2"; ObjectID = "Stb-1I-GEv";</note>
+      </trans-unit>
+      <trans-unit id="TXe-yw-P8f.normalTitle">
+        <source>E1</source>
+        <note>Class = "UIButton"; normalTitle = "E1"; ObjectID = "TXe-yw-P8f";</note>
+      </trans-unit>
+      <trans-unit id="UKt-JS-XiY.normalTitle">
+        <source>:10</source>
+        <note>Class = "UIButton"; normalTitle = ":10"; ObjectID = "UKt-JS-XiY";</note>
+      </trans-unit>
+      <trans-unit id="VlN-r9-lJz.normalTitle">
+        <source>Button</source>
+        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "VlN-r9-lJz";</note>
+      </trans-unit>
+      <trans-unit id="WwO-h4-OrM.normalTitle">
+        <source>NF4</source>
+        <note>Class = "UIButton"; normalTitle = "NF4"; ObjectID = "WwO-h4-OrM";</note>
+      </trans-unit>
+      <trans-unit id="XuE-Lx-ZJF.normalTitle">
+        <source>TD2</source>
+        <note>Class = "UIButton"; normalTitle = "TD2"; ObjectID = "XuE-Lx-ZJF";</note>
+      </trans-unit>
+      <trans-unit id="Yuu-zI-KdZ.normalTitle">
+        <source>NF4</source>
+        <note>Class = "UIButton"; normalTitle = "NF4"; ObjectID = "Yuu-zI-KdZ";</note>
+      </trans-unit>
+      <trans-unit id="YvN-NY-CB1.normalTitle">
+        <source>-</source>
+        <note>Class = "UIButton"; normalTitle = "-"; ObjectID = "YvN-NY-CB1";</note>
+      </trans-unit>
+      <trans-unit id="Z8y-E0-8KZ.normalTitle">
+        <source>1:00</source>
+        <note>Class = "UIButton"; normalTitle = "1:00"; ObjectID = "Z8y-E0-8KZ";</note>
+      </trans-unit>
+      <trans-unit id="Zyp-ER-eWy.normalTitle">
+        <source>P1</source>
+        <note>Class = "UIButton"; normalTitle = "P1"; ObjectID = "Zyp-ER-eWy";</note>
+      </trans-unit>
+      <trans-unit id="bu0-Bb-1FY.normalTitle">
+        <source>P1</source>
+        <note>Class = "UIButton"; normalTitle = "P1"; ObjectID = "bu0-Bb-1FY";</note>
+      </trans-unit>
+      <trans-unit id="c48-XX-BVo.normalTitle">
+        <source>:01</source>
+        <note>Class = "UIButton"; normalTitle = ":01"; ObjectID = "c48-XX-BVo";</note>
+      </trans-unit>
+      <trans-unit id="cBx-kn-S2b.text">
+        <source>00:00:00</source>
+        <note>Class = "UILabel"; text = "00:00:00"; ObjectID = "cBx-kn-S2b";</note>
+      </trans-unit>
+      <trans-unit id="d9U-1R-QjF.normalTitle">
+        <source>NF3</source>
+        <note>Class = "UIButton"; normalTitle = "NF3"; ObjectID = "d9U-1R-QjF";</note>
+      </trans-unit>
+      <trans-unit id="dim-fb-fDV.normalTitle">
+        <source>:30</source>
+        <note>Class = "UIButton"; normalTitle = ":30"; ObjectID = "dim-fb-fDV";</note>
+      </trans-unit>
+      <trans-unit id="drk-gD-DZr.normalTitle">
+        <source>:30</source>
+        <note>Class = "UIButton"; normalTitle = ":30"; ObjectID = "drk-gD-DZr";</note>
+      </trans-unit>
+      <trans-unit id="edx-DY-ws9.normalTitle">
+        <source>Start Stop</source>
+        <note>Class = "UIButton"; normalTitle = "Start Stop"; ObjectID = "edx-DY-ws9";</note>
+      </trans-unit>
+      <trans-unit id="fnw-CC-GlV.normalTitle">
+        <source>Neutral</source>
+        <note>Class = "UIButton"; normalTitle = "Neutral"; ObjectID = "fnw-CC-GlV";</note>
+      </trans-unit>
+      <trans-unit id="gtB-c3-S7W.normalTitle">
+        <source>TD2</source>
+        <note>Class = "UIButton"; normalTitle = "TD2"; ObjectID = "gtB-c3-S7W";</note>
+      </trans-unit>
+      <trans-unit id="gwe-Dc-VE8.normalTitle">
+        <source>Stop</source>
+        <note>Class = "UIButton"; normalTitle = "Stop"; ObjectID = "gwe-Dc-VE8";</note>
+      </trans-unit>
+      <trans-unit id="hch-Ys-n14.normalTitle">
+        <source>-</source>
+        <note>Class = "UIButton"; normalTitle = "-"; ObjectID = "hch-Ys-n14";</note>
+      </trans-unit>
+      <trans-unit id="hzh-fg-Ttd.normalTitle">
+        <source>:10</source>
+        <note>Class = "UIButton"; normalTitle = ":10"; ObjectID = "hzh-fg-Ttd";</note>
+      </trans-unit>
+      <trans-unit id="i61-ft-IAy.normalTitle">
+        <source>R2</source>
+        <note>Class = "UIButton"; normalTitle = "R2"; ObjectID = "i61-ft-IAy";</note>
+      </trans-unit>
+      <trans-unit id="iee-mG-Ur3.title">
+        <source>Main Scoreboard</source>
+        <note>Class = "UITabBarItem"; title = "Main Scoreboard"; ObjectID = "iee-mG-Ur3";</note>
+      </trans-unit>
+      <trans-unit id="jm2-eI-Sfe.normalTitle">
+        <source>P1</source>
+        <note>Class = "UIButton"; normalTitle = "P1"; ObjectID = "jm2-eI-Sfe";</note>
+      </trans-unit>
+      <trans-unit id="kUx-2c-vM7.normalTitle">
+        <source>1:00</source>
+        <note>Class = "UIButton"; normalTitle = "1:00"; ObjectID = "kUx-2c-vM7";</note>
+      </trans-unit>
+      <trans-unit id="kf2-y0-gkK.normalTitle">
+        <source>:01</source>
+        <note>Class = "UIButton"; normalTitle = ":01"; ObjectID = "kf2-y0-gkK";</note>
+      </trans-unit>
+      <trans-unit id="l5A-cT-w5C.normalTitle">
+        <source>Green</source>
+        <note>Class = "UIButton"; normalTitle = "Green"; ObjectID = "l5A-cT-w5C";</note>
+      </trans-unit>
+      <trans-unit id="lvf-9Y-thY.normalTitle">
+        <source>NF2</source>
+        <note>Class = "UIButton"; normalTitle = "NF2"; ObjectID = "lvf-9Y-thY";</note>
+      </trans-unit>
+      <trans-unit id="mbU-K9-gfa.normalTitle">
+        <source>NF2</source>
+        <note>Class = "UIButton"; normalTitle = "NF2"; ObjectID = "mbU-K9-gfa";</note>
+      </trans-unit>
+      <trans-unit id="nus-bK-GHM.normalTitle">
+        <source>R2</source>
+        <note>Class = "UIButton"; normalTitle = "R2"; ObjectID = "nus-bK-GHM";</note>
+      </trans-unit>
+      <trans-unit id="o0Z-nc-f8J.normalTitle">
+        <source>TD2</source>
+        <note>Class = "UIButton"; normalTitle = "TD2"; ObjectID = "o0Z-nc-f8J";</note>
+      </trans-unit>
+      <trans-unit id="o9N-8V-ORt.normalTitle">
+        <source>:01</source>
+        <note>Class = "UIButton"; normalTitle = ":01"; ObjectID = "o9N-8V-ORt";</note>
+      </trans-unit>
+      <trans-unit id="p3w-Lz-efI.normalTitle">
+        <source>R2</source>
+        <note>Class = "UIButton"; normalTitle = "R2"; ObjectID = "p3w-Lz-efI";</note>
+      </trans-unit>
+      <trans-unit id="qsu-dZ-GLF.normalTitle">
+        <source>Red</source>
+        <note>Class = "UIButton"; normalTitle = "Red"; ObjectID = "qsu-dZ-GLF";</note>
+      </trans-unit>
+      <trans-unit id="rni-MS-LFg.normalTitle">
+        <source>Reset</source>
+        <note>Class = "UIButton"; normalTitle = "Reset"; ObjectID = "rni-MS-LFg";</note>
+      </trans-unit>
+      <trans-unit id="s5T-bf-xSL.text">
+        <source>00:00:00</source>
+        <note>Class = "UILabel"; text = "00:00:00"; ObjectID = "s5T-bf-xSL";</note>
+      </trans-unit>
+      <trans-unit id="tOL-xI-d6o.normalTitle">
+        <source>:30</source>
+        <note>Class = "UIButton"; normalTitle = ":30"; ObjectID = "tOL-xI-d6o";</note>
+      </trans-unit>
+      <trans-unit id="vCJ-uO-lPc.title">
+        <source>Full Scoreboard</source>
+        <note>Class = "UITabBarItem"; title = "Full Scoreboard"; ObjectID = "vCJ-uO-lPc";</note>
+      </trans-unit>
+      <trans-unit id="vbn-cJ-n3T.normalTitle">
+        <source>NF4</source>
+        <note>Class = "UIButton"; normalTitle = "NF4"; ObjectID = "vbn-cJ-n3T";</note>
+      </trans-unit>
+      <trans-unit id="xGb-gg-0BQ.normalTitle">
+        <source>P1</source>
+        <note>Class = "UIButton"; normalTitle = "P1"; ObjectID = "xGb-gg-0BQ";</note>
+      </trans-unit>
+      <trans-unit id="xcI-vv-dcE.normalTitle">
+        <source>NF3</source>
+        <note>Class = "UIButton"; normalTitle = "NF3"; ObjectID = "xcI-vv-dcE";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="ScoreboardAndRidingTimeClock/Info.plist" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.2" build-num="7C68"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="ScoreboardAndRidingTimeClockTests/Info.plist" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.2" build-num="7C68"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="ScoreboardAndRidingTimeClockUITests/Info.plist" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.2" build-num="7C68"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

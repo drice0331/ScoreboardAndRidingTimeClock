@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40059D371C9DE3600070E197 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40059D391C9DE3600070E197 /* InfoPlist.strings */; };
+		40059D3E1C9DE3610070E197 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40059D401C9DE3610070E197 /* InfoPlist.strings */; };
+		40059D431C9DE3610070E197 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40059D451C9DE3610070E197 /* InfoPlist.strings */; };
 		4017CA3D1C46093C00429A8B /* MainClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017CA3C1C46093C00429A8B /* MainClock.swift */; };
 		4017CA3F1C46096B00429A8B /* BaseClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017CA3E1C46096B00429A8B /* BaseClock.swift */; };
 		40209C2B1C5C93AA00C5ED3C /* MainScoreboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40209C2A1C5C93AA00C5ED3C /* MainScoreboardViewController.swift */; };
 		40209C311C61977E00C5ED3C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40209C301C61977E00C5ED3C /* BaseViewController.swift */; };
+		4055DEFA1C8CE2E50045CB6A /* Wrong Buzzer.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4055DEF91C8CE2E50045CB6A /* Wrong Buzzer.wav */; };
 		408070931C29FF0E00E76845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408070921C29FF0E00E76845 /* AppDelegate.swift */; };
 		408070981C29FF0E00E76845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408070961C29FF0E00E76845 /* Main.storyboard */; };
 		4080709A1C29FF0E00E76845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408070991C29FF0E00E76845 /* Assets.xcassets */; };
@@ -40,10 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40059D381C9DE3600070E197 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		40059D3A1C9DE3600070E197 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		40059D3B1C9DE3600070E197 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		40059D3F1C9DE3610070E197 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		40059D441C9DE3610070E197 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4017CA3C1C46093C00429A8B /* MainClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainClock.swift; sourceTree = "<group>"; };
 		4017CA3E1C46096B00429A8B /* BaseClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClock.swift; sourceTree = "<group>"; };
 		40209C2A1C5C93AA00C5ED3C /* MainScoreboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainScoreboardViewController.swift; path = ../MainScoreboardViewController.swift; sourceTree = "<group>"; };
 		40209C301C61977E00C5ED3C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4055DEF91C8CE2E50045CB6A /* Wrong Buzzer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Wrong Buzzer.wav"; sourceTree = "<group>"; };
 		4080708F1C29FF0E00E76845 /* ScoreboardAndRidingTimeClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreboardAndRidingTimeClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408070921C29FF0E00E76845 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		408070971C29FF0E00E76845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +96,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40059D331C9DCCF10070E197 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				408070C01C34CA8200E76845 /* FullScoreboardViewController.swift */,
+				4096D04B1C58885600ADB0CF /* RidingTimeViewController.swift */,
+				40209C2A1C5C93AA00C5ED3C /* MainScoreboardViewController.swift */,
+				40209C301C61977E00C5ED3C /* BaseViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		40059D341C9DCD0B0070E197 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				408070C21C35D31E00E76845 /* RidingTimeClock.swift */,
+				4017CA3E1C46096B00429A8B /* BaseClock.swift */,
+				4017CA3C1C46093C00429A8B /* MainClock.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		408070861C29FF0E00E76845 = {
 			isa = PBXGroup;
 			children = (
@@ -109,18 +140,15 @@
 		408070911C29FF0E00E76845 /* ScoreboardAndRidingTimeClock */ = {
 			isa = PBXGroup;
 			children = (
+				40059D401C9DE3610070E197 /* InfoPlist.strings */,
+				40059D341C9DCD0B0070E197 /* Model */,
+				40059D331C9DCCF10070E197 /* ViewController */,
 				408070921C29FF0E00E76845 /* AppDelegate.swift */,
-				408070C01C34CA8200E76845 /* FullScoreboardViewController.swift */,
-				4096D04B1C58885600ADB0CF /* RidingTimeViewController.swift */,
-				40209C2A1C5C93AA00C5ED3C /* MainScoreboardViewController.swift */,
-				40209C301C61977E00C5ED3C /* BaseViewController.swift */,
-				408070C21C35D31E00E76845 /* RidingTimeClock.swift */,
-				4017CA3E1C46096B00429A8B /* BaseClock.swift */,
-				4017CA3C1C46093C00429A8B /* MainClock.swift */,
 				408070961C29FF0E00E76845 /* Main.storyboard */,
 				408070991C29FF0E00E76845 /* Assets.xcassets */,
 				4080709B1C29FF0E00E76845 /* LaunchScreen.storyboard */,
 				4080709E1C29FF0E00E76845 /* Info.plist */,
+				4055DEF91C8CE2E50045CB6A /* Wrong Buzzer.wav */,
 			);
 			path = ScoreboardAndRidingTimeClock;
 			sourceTree = "<group>";
@@ -128,6 +156,7 @@
 		408070A61C29FF0E00E76845 /* ScoreboardAndRidingTimeClockTests */ = {
 			isa = PBXGroup;
 			children = (
+				40059D451C9DE3610070E197 /* InfoPlist.strings */,
 				408070A71C29FF0E00E76845 /* ScoreboardAndRidingTimeClockTests.swift */,
 				408070A91C29FF0E00E76845 /* Info.plist */,
 			);
@@ -137,6 +166,7 @@
 		408070B11C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests */ = {
 			isa = PBXGroup;
 			children = (
+				40059D391C9DE3600070E197 /* InfoPlist.strings */,
 				408070B21C29FF0E00E76845 /* ScoreboardAndRidingTimeClockUITests.swift */,
 				408070B41C29FF0E00E76845 /* Info.plist */,
 			);
@@ -250,6 +280,8 @@
 				4080709D1C29FF0E00E76845 /* LaunchScreen.storyboard in Resources */,
 				4080709A1C29FF0E00E76845 /* Assets.xcassets in Resources */,
 				408070981C29FF0E00E76845 /* Main.storyboard in Resources */,
+				4055DEFA1C8CE2E50045CB6A /* Wrong Buzzer.wav in Resources */,
+				40059D3E1C9DE3610070E197 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40059D431C9DE3610070E197 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40059D371C9DE3600070E197 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,10 +351,35 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		40059D391C9DE3600070E197 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40059D381C9DE3600070E197 /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		40059D401C9DE3610070E197 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40059D3F1C9DE3610070E197 /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		40059D451C9DE3610070E197 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40059D441C9DE3610070E197 /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		408070961C29FF0E00E76845 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				408070971C29FF0E00E76845 /* Base */,
+				40059D3B1C9DE3600070E197 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -329,6 +388,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				4080709C1C29FF0E00E76845 /* Base */,
+				40059D3A1C9DE3600070E197 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

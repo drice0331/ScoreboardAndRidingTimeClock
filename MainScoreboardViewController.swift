@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class MainScoreboardViewController: BaseViewController {
 
@@ -73,6 +74,7 @@ class MainScoreboardViewController: BaseViewController {
         let clocktime : String = self.clock.timeString() as String
         if self.clock.getElapsedTime() <= 0 {
             self.clock.stop()
+            self.playBuzzer("")
         }
         self.timeLabel.text = clocktime
     }

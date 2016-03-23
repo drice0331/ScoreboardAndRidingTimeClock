@@ -1,0 +1,45 @@
+/* Class = "UIButton"; normalTitle = "Reset"; ObjectID = "AZQ-bw-bpg"; */
+"AZQ-bw-bpg.normalTitle" = "Recarga";
+
+/* Class = "UITabBarItem"; title = "Riding Time Clock"; ObjectID = "EE2-k4-DLI"; */
+"EE2-k4-DLI.title" = "El Clocko";
+
+/* Class = "UIButton"; normalTitle = "Red"; ObjectID = "GrP-Fm-hCk"; */
+"GrP-Fm-hCk.normalTitle" = "Rojo";
+
+/* Class = "UIButton"; normalTitle = "Green"; ObjectID = "IKG-kV-gUu"; */
+"IKG-kV-gUu.normalTitle" = "Verde";
+
+/* Class = "UIButton"; normalTitle = "Reset"; ObjectID = "Ibe-dC-GWz"; */
+"Ibe-dC-GWz.normalTitle" = "Recarga";
+
+/* Class = "UIButton"; normalTitle = "Start Stop"; ObjectID = "Lim-h7-Y1p"; */
+"Lim-h7-Y1p.normalTitle" = "Empeza Para";
+
+/* Class = "UIButton"; normalTitle = "Reset"; ObjectID = "Sfx-mt-tKA"; */
+"Sfx-mt-tKA.normalTitle" = "Recarga";
+
+/* Class = "UIButton"; normalTitle = "Start Stop"; ObjectID = "edx-DY-ws9"; */
+"edx-DY-ws9.normalTitle" = "Empeza Para";
+
+/* Class = "UIButton"; normalTitle = "Neutral"; ObjectID = "fnw-CC-GlV"; */
+"fnw-CC-GlV.normalTitle" = "Neutralo";
+
+/* Class = "UIButton"; normalTitle = "Stop"; ObjectID = "gwe-Dc-VE8"; */
+"gwe-Dc-VE8.normalTitle" = "Para";
+
+/* Class = "UITabBarItem"; title = "Main Scoreboard"; ObjectID = "iee-mG-Ur3"; */
+"iee-mG-Ur3.title" = "Maino Scoreboardo";
+
+/* Class = "UIButton"; normalTitle = "Green"; ObjectID = "l5A-cT-w5C"; */
+"l5A-cT-w5C.normalTitle" = "Verde";
+
+/* Class = "UIButton"; normalTitle = "Red"; ObjectID = "qsu-dZ-GLF"; */
+"qsu-dZ-GLF.normalTitle" = "Rojo";
+
+/* Class = "UIButton"; normalTitle = "Reset"; ObjectID = "rni-MS-LFg"; */
+"rni-MS-LFg.normalTitle" = "Recarga";
+
+/* Class = "UITabBarItem"; title = "Full Scoreboard"; ObjectID = "vCJ-uO-lPc"; */
+"vCJ-uO-lPc.title" = "Fullo Scoreboardo";
+
