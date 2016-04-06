@@ -8,7 +8,6 @@
 
 import UIKit
 import AVFoundation
-import CoreBluetooth
 
 protocol BuzzerSoundPlayer {
     func playBuzzer(buzzerSoundPath_: String);
@@ -21,6 +20,10 @@ class BaseViewController: UIViewController {
 
     
     var audioPlayer = AVAudioPlayer()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
     func playBuzzer(buzzerSoundPath_: String) {
         var buzzerSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Wrong Buzzer", ofType: "wav")!)
@@ -37,8 +40,5 @@ class BaseViewController: UIViewController {
         }
     }
     
-    func bluetoothShare() {
-        
-    }
 }
 

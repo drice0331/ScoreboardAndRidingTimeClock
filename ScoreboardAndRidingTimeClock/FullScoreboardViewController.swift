@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FullScoreboardViewController: BaseViewController {
+class FullScoreboardViewController: BTPeripheralViewController {
 
     //Views - 
     //TODO - manually resize based on screen dimens and device
@@ -156,6 +156,7 @@ class FullScoreboardViewController: BaseViewController {
         let mainclocktime : String = self.mainclock.timeString() as String
         if self.mainclock.getElapsedTime() <= 0 {
             if mainclock.clockRunning {
+                
                 self.playBuzzer("")
             }
             self.mainclock.stop()
